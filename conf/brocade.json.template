@@ -1,0 +1,11 @@
+{
+  "api_host": "API_HOST",
+  "http_scheme": "https",
+  "api_port": "9070",
+  "api_version": "3.4",
+  "api_context_start": "/api/tm",
+  "service_protection_endpoint": "/config/active/protection",
+  "protection_class": "ip-blacklist",
+  "api_user": "YOUR_API_USERNAME",
+  "api_password": "YOUR_API_PASSWORD"
+}
