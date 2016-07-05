@@ -6,3 +6,5 @@ conf/*.json.prod
 conf/*.json.dev
 node_modules
 node_modules/*
+log
+log/*

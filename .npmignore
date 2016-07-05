@@ -1,2 +1,4 @@
 conf/*.json
 conf/*.json.prod
+log
+log/*

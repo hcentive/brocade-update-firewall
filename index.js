@@ -1,3 +1,4 @@
+var logger = require('./lib/logger.js');
 var av = require('./lib/alienvault.js');
 var et = require('./lib/emergingthreats.js');
 var brocade = require('./lib/brocade.js');
@@ -17,14 +18,18 @@ var updateAVAddresses = function(callback) {
   });
 };
 
-var updateETAddresses = function(callback) {
+var updateETAddresses = function() {
   et.getAddresses(null, function(error, data) {
-    if (error) {
-      callback(error);
+    if (error) {      
+      callback(error, null);
     } else {
       if (data.length > 0) {
         brocade.updateBannedIPs(null, data, function(err, results) {
-          callback(err, results);
+          if(err) {
+            callback(err, null);
+          } else {
+            callback(null, results);
+          }
         });
       }
     }
@@ -51,15 +56,14 @@ var updateTorAddresses = function(callback) {
 
 var callback = function(error, data) {
   if (error) {
-    console.log(error, error.stack);
+    logger.error(error);
   } else {
-    console.log(data);
-    // console.log(data);
+    logger.info(data);
   }
 };
 
 // updateAVAddresses(callback);
 
-updateETAddresses(callback);
+updateETAddresses();
 
 // updateTorAddresses(callback);
