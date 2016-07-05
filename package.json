@@ -1,0 +1,17 @@
+{
+  "name": "brocade-update-banned-ips",
+  "version": "1.0.0",
+  "description": "Update list of banned IPs in RBL protection class from addresses in Alientvault's OTX API",
+  "main": "index.js",
+  "dependencies": {
+    "https": "1.0.0",
+    "underscore": "1.8.3",
+    "path": "0.12.7",
+    "readline": "1.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Satyendra Sharma <satyendra.sharma@hcentive.com>",
+  "license": "ISC"
+}
