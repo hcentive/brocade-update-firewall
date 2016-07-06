@@ -1,4 +1,4 @@
-brocade-update-banned-ips
+brocade-update-firewall
 =========================
 NPM module to update banned IP addresses list in Brocade's RBL service protection class.
 
@@ -11,7 +11,7 @@ The following components are required to run this module -
 * nodejs (5.9.1)
 
 ## Installation and configuration
-Create an a `Service Protection Class` from the Brocade console by navigating to `Catalogs` and then clicking `Service Protection Classes`
+Create a `Service Protection Class` from the Brocade console by navigating to `Catalogs` and then clicking `Service Protection Classes`
 
 ![Catalogs -> Service Protection classes](https://s3-us-west-2.amazonaws.com/techopsteam/assets/images/service-protection.png)
 
@@ -27,11 +27,11 @@ Select your service protection class and click `Update`
 
 Check out the repository from git -
 ```
-$ git clone https://git.demo.hcentive.com/brocade-update-banned-ips
+$ git clone https://git.demo.hcentive.com/brocade-update-firewall
 ```
-Go to the `brocade-update-banned-ips` directory and run `npm install` install dependencies -
+Go to the `brocade-update-firewall` directory and run `npm install` install dependencies -
 ```
-$ cd brocade-update-banned-ips
+$ cd brocade-update-firewall
 $ npm install
 ```
 Make the following changes to configure Brocade API endpoint -
@@ -43,7 +43,8 @@ Make the following changes to configure Brocade API endpoint -
 Execute the following command from the installation directory to update the blacklist -
 ```
 $ node index.js
-Update IP blacklist with 2538 CIDRs
+info: Updating ip-blacklist with 1644 addresses
+info: Updated ip-blacklist with 1644 addresses
 ```
 
 ## Validation
@@ -60,3 +61,6 @@ Drill down to the `Access Restrictions` section to view a list of banned CIDRs
 To remove an IP address from the banned IPs list click on the `Remove` checkbox next to the IP address and click `Update` under the `Apply Changes` section at the bottom of the page.
 
 `NOTE: The removed IP address will be added back to the protection class on the next run of this utility unless the IP address is removed from Emerging Threats' blacklist.`
+
+### Logs
+Logs are written to `info.log` and `error.log` files the `logs` folder as default. The change location and names of the log files, update attribute values in `default.json`.

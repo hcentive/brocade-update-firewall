@@ -6,6 +6,7 @@
   "api_context_start": "/api/tm",
   "service_protection_endpoint": "/config/active/protection",
   "protection_class": "ip-blacklist",
+  "protection_class_backup": "ip-blacklist-backup",
   "api_user": "YOUR_API_USERNAME",
   "api_password": "YOUR_API_PASSWORD"
 }

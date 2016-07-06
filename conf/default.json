@@ -1,0 +1,5 @@
+{
+  "logdir": "./log",
+  "infolog": "info.log",
+  "errorlog": "error.log"
+}
