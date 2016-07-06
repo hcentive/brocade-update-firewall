@@ -29,10 +29,9 @@ Check out the repository from git -
 ```
 $ git clone https://git.demo.hcentive.com/brocade-update-firewall
 ```
-Go to the `brocade-update-firewall` directory and run `npm install` install dependencies -
+Go to the `brocade-update-firewall` directory and update configuration attributes to connect to the Brocade API -
 ```
 $ cd brocade-update-firewall
-$ npm install
 ```
 Make the following changes to configure Brocade API endpoint -
 * Rename `conf/brocade.json.template` to `conf/brocade.json`.
@@ -40,9 +39,10 @@ Make the following changes to configure Brocade API endpoint -
 * Replace `YOUR_API_USERNAME` with the username that has permissions to make API calls, e.g. `restapi`.
 * Replace `YOUR_API_PASSWORD` with the password for the API user.
 
-Execute the following command from the installation directory to update the blacklist -
+Run `npm install` to install dependencies and executable command to update the firewall. Run the `update-fw` command from the installation directory to update the blacklist -
 ```
-$ node index.js
+$ npm install
+$ update-fw
 info: Updating ip-blacklist with 1644 addresses
 info: Updated ip-blacklist with 1644 addresses
 ```

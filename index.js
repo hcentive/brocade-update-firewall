@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var logger = require('./lib/logger.js');
 var av = require('./lib/alienvault.js');
 var et = require('./lib/emergingthreats.js');
@@ -20,7 +22,7 @@ var updateAVAddresses = function(callback) {
 
 var updateETAddresses = function() {
   et.getAddresses(null, function(error, data) {
-    if (error) {      
+    if (error) {
       callback(error, null);
     } else {
       if (data.length > 0) {
