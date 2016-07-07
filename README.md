@@ -66,4 +66,4 @@ To remove an IP address from the banned IPs list click on the `Remove` checkbox 
 `NOTE: The removed IP address will be added back to the protection class on the next run of this utility unless the IP address is removed from Emerging Threats' blacklist.`
 
 ### Logs
-Logs are written to `info.log` and `error.log` files the `logs` folder as default. The change location and names of the log files, update attribute values in `default.json`.
+Logs are written to `info.log` and `error.log` files the `logs` folder as default. Edit `conf/default.json` to change location and names of the log files, and update attribute values from the defaults.
