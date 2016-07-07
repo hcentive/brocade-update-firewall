@@ -27,7 +27,7 @@ Select your service protection class and click `Update`
 
 Check out the repository from git -
 ```
-$ git clone https://git.demo.hcentive.com/brocade-update-firewall
+$ git clone https://github.com/hcentive/brocade-update-firewall
 ```
 Go to the `brocade-update-firewall` directory and update configuration attributes to connect to the Brocade API -
 ```
