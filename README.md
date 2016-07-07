@@ -16,12 +16,15 @@ Create a `Service Protection Class` from the Brocade console by navigating to `C
 ![Catalogs -> Service Protection classes](https://s3-us-west-2.amazonaws.com/techopsteam/assets/images/service-protection.png)
 
 Enter a name for your service protection class and click `Create Class`
+
 ![Create class](https://s3-us-west-2.amazonaws.com/techopsteam/assets/images/create-class.png)
 
 Attach this class to a virtual server
+
 ![Virtual Server - classes](https://s3-us-west-2.amazonaws.com/techopsteam/assets/images/virtual-server-classes.png)
 
 Select your service protection class and click `Update`
+
 ![Select protection class](https://s3-us-west-2.amazonaws.com/techopsteam/assets/images/vserver-protection.png)
 
 
