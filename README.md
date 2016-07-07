@@ -1,6 +1,6 @@
 brocade-update-firewall
 =========================
-NPM module to update banned IP addresses list in Brocade's RBL service protection class.
+NodeJS module to update banned IP addresses list in Brocade's RBL service protection class.
 
 ### Emerging Threats fwip rules
 Downloads [Emerging Threats](https://www.proofpoint.com/us/threat-intelligence-overview) raw IPs for firewall block lists, and then updates the RBL protection class in Brocade. This service protection class is applied to virtual servers to reject traffic from know bad IP addresses.
