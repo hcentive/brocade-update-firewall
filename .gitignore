@@ -1,7 +1,6 @@
 .DS_Store
 .bundle
 
-conf/*.json
 conf/*.json.prod
 conf/*.json.dev
 !conf/default.json

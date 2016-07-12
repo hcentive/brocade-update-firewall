@@ -18,8 +18,11 @@
   "bin": {
     "update-fw": "./index.js"
   },
+  "scripts": {
+    "install": "mkdir -p /var/log/brocade-update-firewall"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hcentive/brocade-update-firewall.git"
+    "url": "https://github.com/hcentive/brocade-update-firewall"
   }
 }
