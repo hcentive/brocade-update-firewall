@@ -36,8 +36,7 @@ Go to the `brocade-update-firewall` directory and update configuration attribute
 ```
 $ cd brocade-update-firewall
 ```
-Make the following changes to configure Brocade API endpoint -
-* Rename `conf/brocade.json.template` to `conf/brocade.json`.
+Make the following changes to configure Brocade API endpoint in `conf/brocade.json` -
 * Replace `API_HOST` with the private IP address of the Brocade load balancer.
 * Replace `YOUR_API_USERNAME` with the username that has permissions to make API calls, e.g. `restapi`.
 * Replace `YOUR_API_PASSWORD` with the password for the API user.

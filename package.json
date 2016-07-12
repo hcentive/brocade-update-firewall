@@ -1,7 +1,7 @@
 {
   "name": "brocade-update-firewall",
   "version": "1.0.0",
-  "description": "Update list of banned IPs in RBL protection class from addresses in Emerging Threats block IPs list",
+  "description": "Update list of banned IPs in Brocade STM's service protection class from addresses in Emerging Threats block IPs list",
   "main": "index.js",
   "dependencies": {
     "https": "1.0.0",
