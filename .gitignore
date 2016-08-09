@@ -3,10 +3,11 @@
 
 conf/*.json.prod
 conf/*.json.dev
-!conf/default.json
 
 node_modules
 node_modules/*
 log
 log/*
 brocade-update-firewall.docx
+images
+images/*

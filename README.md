@@ -1,6 +1,6 @@
 brocade-update-firewall
 =========================
-NodeJS module to update banned IP addresses list in Brocade's RBL service protection class.
+NodeJS module to update banned IP addresses list in Brocade's service protection class.
 
 ### Emerging Threats fwip rules
 Downloads [Emerging Threats](https://www.proofpoint.com/us/threat-intelligence-overview) raw IPs for firewall block lists, and then updates the RBL protection class in Brocade. This service protection class is applied to virtual servers to reject traffic from know bad IP addresses.
@@ -40,6 +40,10 @@ Make the following changes to configure Brocade API endpoint in `conf/brocade.js
 * Replace `API_HOST` with the private IP address of the Brocade load balancer.
 * Replace `YOUR_API_USERNAME` with the username that has permissions to make API calls, e.g. `restapi`.
 * Replace `YOUR_API_PASSWORD` with the password for the API user.
+
+If using a proxy server to make outbound calls, update the proxy server configuration in `conf/default.json` -
+*  Set the value of `proxy_enabled` to `true`.
+* Replace `YOUR_PROXY_SERVER` with the address of your proxy server e.g. `http://localhost:3128`.
 
 Run `npm install` to install dependencies and executable command to update the firewall. Run the `update-fw` command from the installation directory to update the blacklist -
 ```

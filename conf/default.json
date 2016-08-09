@@ -1,5 +1,7 @@
 {
   "logdir": "/var/log/brocade-update-firewall",
   "infolog": "info.log",
-  "errorlog": "error.log"
+  "errorlog": "error.log",
+  "proxy_enabled": "false",
+  "proxy_server": "YOUR_PROXY_SERVER"
 }

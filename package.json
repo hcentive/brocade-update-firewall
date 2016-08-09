@@ -4,22 +4,24 @@
   "description": "Update list of banned IPs in Brocade STM's service protection class from addresses in Emerging Threats block IPs list",
   "main": "index.js",
   "dependencies": {
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.9.0",
     "https": "1.0.0",
     "path": "0.12.7",
     "readline": "1.3.0",
     "underscore": "1.8.3",
-    "winston": "^2.2.0"
+    "winston": "^2.2.0",
+    "https-proxy-agent": "^1.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "lib/setup.js",
+    "install": "mkdir -p /var/log/brocade-update-firewall"
   },
   "author": "Satyendra Sharma <satyendra.sharma@hcentive.com>",
   "license": "ISC",
   "bin": {
     "update-fw": "./index.js"
-  },
-  "scripts": {
-    "install": "mkdir -p /var/log/brocade-update-firewall"
   },
   "repository": {
     "type": "git",
