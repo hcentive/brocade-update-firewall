@@ -14,8 +14,7 @@
     "winston": "^2.2.0",
     "https-proxy-agent": "^1.0.0"
   },
-  "scripts": {
-    "preinstall": "lib/setup.js",
+  "scripts": {    
     "install": "mkdir -p /var/log/brocade-update-firewall"
   },
   "author": "Satyendra Sharma <satyendra.sharma@hcentive.com>",
